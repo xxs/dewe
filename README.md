@@ -1,4 +1,6 @@
-dewe
-====
+#dewe项目基层框架
+=======
 
-dewe demo
+##应用技术
+
+struts2 spring3 hibernate3 Freemaker jquery
