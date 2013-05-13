@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="dewe"
+  id="myeclipse.1368434619437"
+  context-root="/dewe"
+  j2ee-spec="6.0"
+  archive="dewe.war">
+  <attributes>
+    <attribute name="webrootdir" value="src/main/webapp" />
+  </attributes>
+</project-module>
+

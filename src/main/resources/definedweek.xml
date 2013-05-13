@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definedweek>
+	<description>DEFINEDWEEK配置文件</description>
+	<setting>
+		<systemName>信诚家私</systemName>
+		<systemVersion>2.0.6</systemVersion>
+		<systemDescription>信诚家私</systemDescription>
+		<contextPath></contextPath>
+		<imageUploadPath>/upload/image/{date(yyyyMM)}</imageUploadPath>
+		<imageBrowsePath>/upload/image</imageBrowsePath>
+		<adminLoginUrl>/admin/index.jsp</adminLoginUrl>
+		<adminLoginProcessingUrl>/admin/login/check</adminLoginProcessingUrl>
+		<isShowPoweredInfo>true</isShowPoweredInfo>
+		<shopName>信诚家私</shopName>
+		<shopUrl>http://localhost</shopUrl>
+		<shopLogoPath>/images/logo.jpg</shopLogoPath>
+		<hotSearch>松木家具1,松木家具2</hotSearch>
+		<metaKeywords>信诚家私 商城</metaKeywords>
+		<metaDescription>信诚家私</metaDescription>
+		<address></address>
+		<phone></phone>
+		<zipCode>400000</zipCode>
+		<email></email>
+		<certtext></certtext>
+		<currencyType>CNY</currencyType>
+		<currencySign>￥</currencySign>
+		<currencyUnit>元</currencyUnit>
+		<priceScale>2</priceScale>
+		<priceRoundType>roundHalfUp</priceRoundType>
+		<storeAlertCount>5</storeAlertCount>
+		<storeFreezeTime>order</storeFreezeTime>
+		<uploadLimit>1024</uploadLimit>
+		<isLoginFailureLock>true</isLoginFailureLock>
+		<loginFailureLockCount>5</loginFailureLockCount>
+		<loginFailureLockTime>5</loginFailureLockTime>
+		<isRegisterEnabled>true</isRegisterEnabled>
+		<watermarkImagePath>/images/watermark.jpg</watermarkImagePath>
+		<watermarkPosition>bottomRight</watermarkPosition>
+		<watermarkAlpha>50</watermarkAlpha>
+		<bigGoodsImageWidth>500</bigGoodsImageWidth>
+		<bigGoodsImageHeight>500</bigGoodsImageHeight>
+		<smallGoodsImageWidth>300</smallGoodsImageWidth>
+		<smallGoodsImageHeight>300</smallGoodsImageHeight>
+		<thumbnailGoodsImageWidth>140</thumbnailGoodsImageWidth>
+		<thumbnailGoodsImageHeight>140</thumbnailGoodsImageHeight>
+		<defaultBigGoodsImagePath>/images/default_big_goods_image.jpg</defaultBigGoodsImagePath>
+		<defaultSmallGoodsImagePath>/images/default_small_goods_image.jpg</defaultSmallGoodsImagePath>
+		<defaultThumbnailGoodsImagePath>/images/default_thumbnail_goods_image.jpg</defaultThumbnailGoodsImagePath>
+		<isShowMarketPrice>true</isShowMarketPrice>
+		<defaultMarketPriceOperator>multiply</defaultMarketPriceOperator>
+		<defaultMarketPriceNumber>1.2</defaultMarketPriceNumber>
+		<smtpFromMail>test@definedweek.net</smtpFromMail>
+		<smtpHost>smtp.definedweek.net</smtpHost>
+		<smtpPort>25</smtpPort>
+		<smtpUsername>test</smtpUsername>
+		<smtpPassword>test</smtpPassword>
+		<scoreType>orderAmount</scoreType>
+		<scoreScale>1</scoreScale>
+		<buildHtmlDelayTime>0</buildHtmlDelayTime>
+		<isGzipEnabled>false</isGzipEnabled>
+		<isInstantMessagingEnabled>true</isInstantMessagingEnabled>
+		<instantMessagingPosition>right</instantMessagingPosition>
+		<instantMessagingTitle>7 × 24小时服务</instantMessagingTitle>
+		<isLeaveMessageEnabled>true</isLeaveMessageEnabled>
+		<isLeaveMessageCaptchaEnabled>true</isLeaveMessageCaptchaEnabled>
+		<leaveMessageDisplayType>direct</leaveMessageDisplayType>
+		<isCommentEnabled>true</isCommentEnabled>
+		<isCommentCaptchaEnabled>true</isCommentCaptchaEnabled>
+		<commentAuthority>member</commentAuthority>
+		<commentDisplayType>direct</commentDisplayType>
+	</setting>
+	<paymentProduct>
+		<tenpayDirect>
+			<name>财付通（即时交易）</name>
+			<description>
+				<![CDATA[中国领先的在线支付平台，致力于为互联网用户和企业提供安全、便捷、专业的在线支付服务。 <a href="http://union.tenpay.com/mch/mch_register.shtml?sp_suggestuser=admin@definedweek.net" class="red" target="_blank"><span class="red">立即申请</span></a>]]>
+			</description>
+			<bargainorIdName>商户号</bargainorIdName>
+			<bargainorKeyName>密钥</bargainorKeyName>
+			<currencyTypes>CNY</currencyTypes>
+			<logoPath>/template/admin/images/payment/tenpay_direct_icon.gif</logoPath>
+			<className>com.xxs.definedweek.payment.TenpayDirect</className>
+		</tenpayDirect>
+		<tenpayPartner>
+			<name>财付通（担保交易）</name>
+			<description>中国领先的在线支付平台，致力于为互联网用户和企业提供安全、便捷、专业的在线支付服务。</description>
+			<bargainorIdName>商户号</bargainorIdName>
+			<bargainorKeyName>密钥</bargainorKeyName>
+			<currencyTypes>CNY</currencyTypes>
+			<logoPath>/template/admin/images/payment/tenpay_partner_icon.gif</logoPath>
+			<className>com.xxs.definedweek.payment.TenpayPartner</className>
+		</tenpayPartner>
+		<alipayDirect>
+			<name>支付宝（即时交易）</name>
+			<description>
+				<![CDATA[支付宝即时交易，付款后立即到账，无预付/年费，单笔费率阶梯最低0.7%，无流量限制。 <a href="https://www.alipay.com/himalayas/practicality_customer.htm?customer_external_id=C4393933195131654818&market_type=from_agent_contract&pro_codes=61F99645EC0DC4380ADE569DD132AD7A" target="_blank"><span class="red">立即申请</span></a>]]>
+			</description>
+			<bargainorIdName>合作身份者ID</bargainorIdName>
+			<bargainorKeyName>安全校验码</bargainorKeyName>
+			<currencyTypes>CNY</currencyTypes>
+			<logoPath>/template/admin/images/payment/alipay_direct_icon.gif</logoPath>
+			<className>com.xxs.definedweek.payment.AlipayDirect</className>
+		</alipayDirect>
+		<alipayPartner>
+			<name>支付宝（担保交易）</name>
+			<description>支付宝担保交易，买家先付款到支付宝，支付宝收到买家付款后即时通知卖家发货，买家收到货物满意后通知支付宝付款给卖家。</description>
+			<bargainorIdName>合作身份者ID</bargainorIdName>
+			<bargainorKeyName>安全校验码</bargainorKeyName>
+			<currencyTypes>CNY</currencyTypes>
+			<logoPath>/template/admin/images/payment/alipay_partner_icon.gif</logoPath>
+			<className>com.xxs.definedweek.payment.AlipayPartner</className>
+		</alipayPartner>
+		<yeepay>
+			<name>易宝支付</name>
+			<description>中国领先的独立第三方支付平台，致力于为广大商家和消费者提供“安全、简单、快乐”的专业电子支付解决方案和服务。</description>
+			<bargainorIdName>商户编号</bargainorIdName>
+			<bargainorKeyName>密钥</bargainorKeyName>
+			<currencyTypes>CNY</currencyTypes>
+			<logoPath>/template/admin/images/payment/yeepay_icon.gif</logoPath>
+			<className>com.xxs.definedweek.payment.Yeepay</className>
+		</yeepay>
+		<pay99bill>
+			<name>快钱</name>
+			<description>快钱是国内领先的独立第三方支付企业，旨在为各类企业及个人 提供安全、便捷和保密的综合电子支付服务。</description>
+			<bargainorIdName>账户号</bargainorIdName>
+			<bargainorKeyName>密钥</bargainorKeyName>
+			<currencyTypes>CNY</currencyTypes>
+			<logoPath>/template/admin/images/payment/pay99bill_icon.gif</logoPath>
+			<className>com.xxs.definedweek.payment.Pay99bill</className>
+		</pay99bill>
+	</paymentProduct>
+	<logConfig>
+		<item operation="系统设置" actionClass="com.xxs.definedweek.action.admin.SettingAction" actionMethod="update" />
+		
+		<item operation="添加管理员" actionClass="com.xxs.definedweek.action.admin.AdminAction" actionMethod="save" />
+		<item operation="删除管理员" actionClass="com.xxs.definedweek.action.admin.AdminAction" actionMethod="delete" />
+		<item operation="编辑管理员" actionClass="com.xxs.definedweek.action.admin.AdminAction" actionMethod="update" />
+		
+		<item operation="添加会员" actionClass="com.xxs.definedweek.action.admin.MemberAction" actionMethod="save" />
+		<item operation="删除会员" actionClass="com.xxs.definedweek.action.admin.MemberAction" actionMethod="delete" />
+		<item operation="编辑会员" actionClass="com.xxs.definedweek.action.admin.MemberAction" actionMethod="update" />
+		
+		<item operation="添加商品分类" actionClass="com.xxs.definedweek.action.admin.GoodsCategoryAction" actionMethod="save" />
+		<item operation="删除商品分类" actionClass="com.xxs.definedweek.action.admin.GoodsCategoryAction" actionMethod="delete" />
+		<item operation="编辑商品分类" actionClass="com.xxs.definedweek.action.admin.GoodsCategoryAction" actionMethod="update" />
+		
+		<item operation="添加商品" actionClass="com.xxs.definedweek.action.admin.GoodsAction" actionMethod="save" />
+		<item operation="删除商品" actionClass="com.xxs.definedweek.action.admin.GoodsAction" actionMethod="delete" />
+		<item operation="编辑商品" actionClass="com.xxs.definedweek.action.admin.GoodsAction" actionMethod="update" />
+		
+		<item operation="添加文章分类" actionClass="com.xxs.definedweek.action.admin.ArticleCategoryAction" actionMethod="save" />
+		<item operation="删除文章分类" actionClass="com.xxs.definedweek.action.admin.ArticleCategoryAction" actionMethod="delete" />
+		<item operation="编辑文章分类" actionClass="com.xxs.definedweek.action.admin.ArticleCategoryAction" actionMethod="update" />
+		
+		<item operation="添加文章" actionClass="com.xxs.definedweek.action.admin.ArticleAction" actionMethod="save" />
+		<item operation="删除文章" actionClass="com.xxs.definedweek.action.admin.ArticleAction" actionMethod="delete" />
+		<item operation="编辑文章" actionClass="com.xxs.definedweek.action.admin.ArticleAction" actionMethod="update" />
+		
+		<item operation="删除订单" actionClass="com.xxs.definedweek.action.admin.OrderAction" actionMethod="delete" />
+		<item operation="编辑订单" actionClass="com.xxs.definedweek.action.admin.OrderAction" actionMethod="update" />
+		<item operation="订单支付" actionClass="com.xxs.definedweek.action.admin.OrderAction" actionMethod="payment" />
+		<item operation="订单发货" actionClass="com.xxs.definedweek.action.admin.OrderAction" actionMethod="shipping" />
+		<item operation="订单退款" actionClass="com.xxs.definedweek.action.admin.OrderAction" actionMethod="refund" />
+		<item operation="订单退货" actionClass="com.xxs.definedweek.action.admin.OrderAction" actionMethod="reship" />
+		<item operation="订单完成" actionClass="com.xxs.definedweek.action.admin.OrderAction" actionMethod="completed" />
+		<item operation="订单作废" actionClass="com.xxs.definedweek.action.admin.OrderAction" actionMethod="invalid" />
+	</logConfig>
+</definedweek>
